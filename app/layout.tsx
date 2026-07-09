@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Strava AI Coach",
+  title: "Enduro Coach",
   description: "Tu entrenador personal de Enduro MTB con IA",
 };
 
