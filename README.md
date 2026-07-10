@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Enduro Coach
+
+Enduro Coach is an AI-powered training companion for endurance athletes. It reads your workout data (starting with FIT files) and lets you have a natural conversation with an AI coach about your training, your progress, and what to do next.
+
+## Features (current and planned)
+
+- [x] Landing page
+- [ ] Upload FIT files
+- [ ] Athlete memory
+- [ ] AI Coach conversation
+- [ ] Personalized recommendations
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- OpenAI
+- Supabase (planned)
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Philosophy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Enduro Coach aims to turn raw training data into a conversation. Instead of dashboards full of charts, the athlete asks questions in plain language and gets answers grounded in their own workout history.
 
-## Learn More
+The AI Coach is designed to build a persistent understanding of each athlete over time, remembering past workouts, goals, and patterns rather than treating every question in isolation. This memory is what allows recommendations to feel personal instead of generic.
 
-To learn more about Next.js, take a look at the following resources:
+The project favors a simple, focused interface and an incremental build order: get a working conversation loop first, then layer in file parsing, memory, and recommendations on top of it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [x] Sprint 0 — Project setup
+- [x] Sprint 1 — Landing page
+- [ ] Sprint 2 — FIT upload
+- [ ] Sprint 3 — Workout parser
+- [ ] Sprint 4 — Athlete memory
+- [ ] Sprint 5 — AI Coach
+- [ ] Sprint 6 — Race recommendations
